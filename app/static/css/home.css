@@ -94,7 +94,7 @@ button a {
 	color: var(--white);
 }
 .search-local button:hover {
-	letter-spacing: 0.5rem;
+	letter-spacing: 0.3rem;
 }
 
 .loaderBody{

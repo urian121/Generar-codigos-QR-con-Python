@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta charset="utf-8" lang="es">
+  <title>Generar códigos QR con Python</title>
+  <link type="text/css" rel="shortcut icon" href="{{ url_for('static', filename ='imgs/flask.png') }}"/>
+  <link type="text/css" rel="shortcut icon" href="{{ url_for('static', filename ='imgs/logo.png') }}"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body id="body">
+
+  <section class="content-video">
+    <h1>Generar códigos QR con  <br> <span> PYTHON 🐍</span></h1>
+  </section>
+
+
+  <form class="content-video" action="{{ url_for('CrearCodigoQR') }}" method="POST" autocomplete="off">
+  <div class="search-local">
+    <input type="text" name="qr" placeholder="Frase para el QR" autofocus="autofocus" required>
+    <button>Generar <strong> QR</strong></button>
+  </div>
+</form>
+
+
+<!--Mostrando mensaje de alerta-->
+{% if (msg) %}
+<div class="alert success" style="margin-top: 100px;"><h1>Felicitacione</h1><br>
+  <h3>Código QR creado correctamente, <a href="{{ url_for('descargar_qr', nombreImagenQR = imgQR ) }}">Descargar QR</a></h3>
+</div>
+{% endif %}
+
+
+
+
+</body>
+</html>

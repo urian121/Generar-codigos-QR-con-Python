@@ -12,7 +12,6 @@ app = Flask(__name__)
 #Creando un Decorador
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    print(uuid.uuid4())
     return render_template('public/index.html')
 
 
@@ -51,7 +50,7 @@ def CrearCodigoQRS():
     #El método make_image se utiliza para convertir el objeto QRCode en un archivo de imagen
     img = qr.make_image(
                 fill='black',
-                back_color='#81F6F2'
+                back_color='yellow'
             )
     
     basepath = path.dirname (__file__) + '/static/qrs/'

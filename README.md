@@ -65,5 +65,3 @@ python -m pip install --upgrade pip
 ## 📚 Referencia
 
 🔗 [https://pypi.org/project/qrcode/](https://pypi.org/project/qrcode/)
-
-Si quieres, te lo dejo en formato **README.md** o lo adaptamos a **Django / FastAPI** 👀

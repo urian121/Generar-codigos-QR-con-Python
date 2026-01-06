@@ -1,3 +1,10 @@
+# Generar códigos QR con Python
+Aplicación web que permite generar códigos QR con Python y Flask. Es una aplicación bastante sencilla pero en la que aprenderás a generar códigos QR con Python y Flask.
+
+![demo](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/refs/heads/master/Generar-codigos-QR-con-Python-flask.png)
+
+## Pasos para ejecutar el proyecto
+
 ## 🚀 Paso 1: Crear el entorno virtual
 
 ```bash

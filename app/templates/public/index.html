@@ -26,12 +26,17 @@
 
 <!--Mostrando mensaje de alerta-->
 {% if (msg) %}
-<div class="alert success" style="margin-top: 100px;"><h1>Felicitacione</h1><br>
-  <h3>Código QR creado correctamente, <a href="{{ url_for('descargar_qr', nombreImagenQR = imgQR ) }}">Descargar QR</a></h3>
+<div style="text-align: center;">
+  <div style="margin: 20px 0;">
+    <img src="{{ url_for('static', filename='qrs/' + imgQR) }}" alt="Código QR Generado"
+      style="border: 1px solid #ddd; padding: 5px; background: white; max-width: 250px;">
+  </div>
+  <a href="{{ url_for('descargar_qr', nombreImagenQR = imgQR ) }}"
+    style="text-decoration: none; padding: 10px 20px; background-color: #4CAF50; color: white; border-radius: 5px; font-weight: bold;">
+    Descargar QR
+  </a>
 </div>
 {% endif %}
-
-
 
 
 </body>
